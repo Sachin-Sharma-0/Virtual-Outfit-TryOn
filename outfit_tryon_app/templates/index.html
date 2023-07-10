@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outfit Try-On App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Outfit Try-On App</h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Images</h2>
+            <form action="{{ url_for('upload_images') }}" method="POST" enctype="multipart/form-data">
+                <label for="user-images">Choose User Images:</label>
+                <input type="file" name="user_images[]" id="user-images" accept=".jpg, .jpeg, .png" multiple required>
+                <label for="outfit-image">Choose Outfit Image:</label>
+                <input type="file" name="outfit_image" id="outfit-image" accept=".jpg, .jpeg, .png" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="result-section">
+            <h2>Result</h2>
+            <div id="result-image"></div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
