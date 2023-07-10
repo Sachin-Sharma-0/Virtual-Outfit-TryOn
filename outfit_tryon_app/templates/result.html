@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outfit Try-On Results</title>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 10px;
+        }
+        .image-item {
+            text-align: center;
+        }
+        .image-item img {
+            max-width: 100%;
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outfit Try-On Results</h1>
+    <div class="image-grid">
+        {% for image in final_images %}
+            <div class="image-item">
+                <img src="{{ image }}" alt="Result Image">
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
