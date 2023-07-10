@@ -24,17 +24,17 @@ Install the required dependencies:
    ```
 
 
-Steps to use:
+## Steps to use
 
 Upload your own images by clicking on the "Choose User Images" button and selecting one or more photos. Then, upload an outfit image by clicking on the "Upload Outfit Image" button and selecting the desired outfit photo.
 
 Click the "Upload" button to process the images and generate the result. The result will be displayed below in the "Result" section, showing the user's uploaded images with the outfit applied.
 
 
-Contributing
+## Contributing
 Contributions are welcome! If you find any bugs or have suggestions for new features, please create an issue or submit a pull request.
 
-License
+## License
 None
 
 
